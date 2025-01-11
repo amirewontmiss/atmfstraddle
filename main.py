@@ -28,12 +28,10 @@ def atmf_straddle_price(S, T, r, sigma):
     return call_price + put_price
 
 if __name__ == "__main__":
-    # Inputs
     S = 100  # Current stock price
     T = 0.5  # Time to maturity in years
     r = 0.05  # Risk-free interest rate (5%)
-    sigma = 0.2  # Volatility (20%)
+    sigma = 0.2  # Volatility
 
-    # Calculate ATMF straddle price
     straddle_price = atmf_straddle_price(S, T, r, sigma)
     print(f"The approximate price of the ATMF straddle is: {straddle_price:.2f}")
